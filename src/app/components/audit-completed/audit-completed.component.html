@@ -1,0 +1,15 @@
+<div id="AUDIT-component">
+  <h4>Audits Completed with the given time range</h4>
+  <div>
+    <div *ngFor="let comp of lstColored">
+        Completed : {{comp.CompletedAuditCount}}
+        Passed : {{comp.PassedAuditCount}}
+        Failed : {{comp.FailedAuditCount}}
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" [style.width]="comp.CompletedAuditCount *100 + '%'"  style="height: 30;" [style.background-color]="comp.Color"  aria-valuenow="30" aria-valuemin="100" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success" role="progressbar" [style.width]="comp.PassedAuditCount + '%'" style="height: 30;" [style.background-color]="comp.Color" aria-valuenow="30" aria-valuemin="100" aria-valuemax="100"></div>
+            <div class="progress-bar bg-danger" role="progressbar" [style.width]="comp.FailedAuditCount + '%'" style="height: 30;" [style.background-color]="comp.Color" aria-valuenow="20" aria-valuemin="100" aria-valuemax="100"></div>
+        </div>
+    </div>
+  </div>
+</div>

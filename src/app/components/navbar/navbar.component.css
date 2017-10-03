@@ -1,0 +1,32 @@
+body {
+    background-color: #f5f7fa;
+    display: none;
+}
+
+.navbar-header h1 {
+    font-weight: 400;
+}
+
+.navbar-brand {
+    height: 60px;
+    padding: 20px 15px;
+}
+
+.navbar-db-name {
+    border-left: 2px solid #ddd;
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 15px;
+    padding-left: 16px;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
